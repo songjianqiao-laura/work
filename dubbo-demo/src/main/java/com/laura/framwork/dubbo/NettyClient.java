@@ -39,6 +39,7 @@ public class NettyClient<T> {
                                         .getClassLoader())));
                         pipeline.addLast("encoder", new ObjectEncoder());
                         pipeline.addLast("handler", client);
+                        System.out.println("hello");
                     }
                 });
 
